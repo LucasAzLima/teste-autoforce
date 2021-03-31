@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p,a{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-phone {
+    height: auto;
+    width: 320px;
+    background: #2B222F;
+    display: flow-root;
+}
+
+.header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-name {
+    height: 22px;
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon.whats{
+    background-color: #2FB640;
+}
+
+.icon.youtube{
+    background-color: #ff1430;
+}
+
+.menu{
+    width: 100%;
+    z-index: 1;
+    padding: 0;
+}
+.menu li{
+    overflow: hidden;
+
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    background-color: #ff1430;
+    align-items: center;
+    padding: 15px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.dropdown {
+    width: 80%;
+    height: 0;
+    display: none;
+    margin: 0 20px 0 40px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.link-menu ,.link-body{
+    height: 20px;
+    padding: 15px 0px;
+    margin-top: 5px;
+    position: relative;
+}
+
+.link-body:not(:last-child)::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid #333;
+}
+
+.link-menu::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid #333;
+}
+
+.link-body{
+    margin: 0px 20px;
+}
+
+.new::after {
+    position: absolute;
+    content: 'Novo';
+    top: 25%;
+    width: 50px;
+    left: 60%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #ff1430;
+}
+
+.dropdown.active{
+    flex-direction: column;
+    display: flex;
+    animation: drop-menu 0.5s ease-in-out forwards;
+    padding: 0;
+}
+
+.fa.fa-chevron-down{
+    transition: all 0.5s;
+    color: #fff;
+}
+
+.fa.fa-chevron-down.active {
+    transform: rotate(180deg);
+}
+
+.footer{
+    width: 291px;
+    height: 50px;
+    border: 1px solid #ff1430;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.barra{
+    width: 291px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 12px auto 0 auto;
+    position: relative;
+}
+
+.barra::after{
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, orange, #ff1430)
+}
+
+@keyframes drop-menu {
+    100% {
+        height: auto;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mobile-phone">
+      <div class="header">
+        <img alt="option" src="./assets/img/option.svg" />
+        <img class="icon-name" alt="name" src="./assets/img/dealer.svg" />
+        <div class="icon youtube">
+          <img alt="youtube" src="./assets/img/youtube.svg" />
+        </div>
+        <div class="icon whats">
+          <img alt="whatsapp" src="./assets/img/whatsapp.svg" />
+        </div>
+        <img class="icon-name" alt="fiat" src="./assets/img/fiat.svg" />
+      </div>
+      <nav>
+      <ul class="menu">
+        <li class="menu-item">
+          <p>Institucional</p>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </li>
+        <ul class="dropdown">
+          <li class="link-menu"><a class="link" href="#">Quem Somos</a></li>
+          <li class="link-menu"><a class="link" href="#">Fale Conosco</a></li>
+          <li class="link-menu"><a class="link" href="#">Endereços</a></li>
+        </ul>
+        <li class="link-body"><a class="link" href="#">Novos</a></li>
+        <li class="link-body"><a class="link" href="#">Ofertas</a></li>
+        <li class="link-body"><a class="link new" href="#">Seminovos</a></li>
+        <li class="link-body"><a class="link" href="#">Consórcio</a></li>
+        <li class="link-body"><a class="link" href="#">Vendas Direta</a></li>
+        <li class="link-body"><a class="link" href="#">Lifestyle</a></li>
+        <li class="link-body"><a class="link" href="#">Pós-vendas</a></li>
+      </ul></nav>
+      <div class="barra"></div>
+      <div class="footer">
+        <a href="#">VER TODOS OS MODELOS</a>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".menu-item").onclick = function () {
+        document.querySelector(".dropdown").classList.toggle("active");
+        document.querySelector(".fa-chevron-down").classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
